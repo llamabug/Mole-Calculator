@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<head>
+    <title>Mole Calculator</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+</head>
+    <link rel="stylesheet" href="style.css">
+
+    <body>
+        <div id="header">
+            <h1>MOLE CALCULATOR</h1>
+            <div class="menuWrapper">
+                <div class="menuBar" onclick="menu(this)">
+                <div class="bar1"></div>
+                <div class="bar2"></div>
+                <div class="bar3"></div>
+            </div>
+            <div id="sidenav">
+                <a href="howTo.html">How To</a>
+            </div>
+        </div>
+        </div>
+        <div id="main">hey</div>
+        <script>
+            function menu(x) {
+                x.classList.toggle("change");
+                const sidenav = document.getElementById("sidenav");
+                if (sidenav.style.display === "block") {
+                    sidenav.style.display = "none";
+                } else {
+                    sidenav.style.display = "block";
+                }
+            }
+        </script>
+    </body>
+</html>
