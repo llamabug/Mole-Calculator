@@ -18,20 +18,33 @@
             </div>
             <div id="sidenav">
                 <a href="howTo.html">How To</a>
+                <a href="moles.html">What are Moles?</a>
             </div>
         </div>
         </div>
-        <div id="main">hey</div>
-        <script>
-            function menu(x) {
-                x.classList.toggle("change");
-                const sidenav = document.getElementById("sidenav");
-                if (sidenav.style.display === "block") {
-                    sidenav.style.display = "none";
-                } else {
-                    sidenav.style.display = "block";
-                }
-            }
-        </script>
+        <div id="main">
+            <h2>Calculation Type:</h2>
+            <button class="mode" data-mode="mass">Mass</button>
+            <button class="mode" data-mode="mass">Mass</button>
+            <button class="mode" data-mode="mass">Molar Mass</button>
+            <br><br>
+            <hr>
+            <h2>Input</h2>
+            <label for="input1">Mass/Molar Mass</label>
+            <input type="text" id="input1" name="input1">
+            <br><br>
+            <label for="input1">Moles/Molar Mass</label>
+            <input type="text" id="input2" name="input2">
+            <br><br>
+            <hr>
+            <button onclick="calculate()">Calculate</button>
+            <br><br>
+            <hr>
+            <p id="output"></p>
+        </div>
+        <div id="mole">
+            <img src="mole.png">
+        </div>
+        <script src="script.js"></script>
     </body>
 </html>
