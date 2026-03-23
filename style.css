@@ -9,6 +9,12 @@ body {
 h1 {
     font-family: Barriecito;
     font-size: 4vw;
+    color: black;
+}
+
+h2 {
+    font-family: Barriecito;
+    font-size: 2vw;
 }
 
 #main {
@@ -48,14 +54,11 @@ h1 {
       width: 35px;
       height: 5px;
       transition: 0.4s;
-      background-color: #7d84b2;
+      background-color: #ff91a1;
       margin: 6px 0;
       margin-right: 2vw;
 }
 
-.bar2 {
-      background-color: #ff91a1;
-}
 
 .change .bar1 {
       transform: translate(0, 11px) rotate(-45deg);
@@ -97,4 +100,20 @@ h1 {
 
 .menuWrapper {
     position: relative;
+}
+
+#mole img {
+    width: 10vw;
+}
+
+button {
+    background-color: #fffbb4;
+    border: solid black;
+    border-radius: 1vw;
+    font-family: Barriecito;
+    font-size: 1.25vw;
+}
+
+button:hover {
+    cursor: pointer;
 }
