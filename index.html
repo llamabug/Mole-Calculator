@@ -4,6 +4,7 @@
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href='https://fonts.googleapis.com/css?family=Barriecito' rel='stylesheet'>
+    <meta charset="UTF-8">
 </head>
     <link rel="stylesheet" href="style.css">
 
@@ -19,28 +20,46 @@
             <div id="sidenav">
                 <a href="howTo.html">How To</a>
                 <a href="moles.html">What are Moles?</a>
+                <a href="stochio.html">Stochiometry</a>
             </div>
         </div>
         </div>
         <div id="main">
+
             <h2>Calculation Type:</h2>
+
+
+            <button class="blank">blanksace</button>
             <button class="mode" data-mode="mass">Mass</button>
-            <button class="mode" data-mode="mass">Mass</button>
-            <button class="mode" data-mode="mass">Molar Mass</button>
+            <button class="blank">blankspace</button>
+            <button class="mode" data-mode="moles">Moles</button>
+            <button class="blank">blankspace</button>
+            <button class="mode" data-mode="molarMass">Molar Mass</button>
+
             <br><br>
             <hr>
-            <h2>Input</h2>
-            <label for="input1">Mass/Molar Mass</label>
-            <input type="text" id="input1" name="input1">
+
+            <h2>Input:</h2>
+
+            <label id="label1" for="input1">Mass:</label>
+            <input type="number" id="input1">
+
             <br><br>
-            <label for="input1">Moles/Molar Mass</label>
-            <input type="text" id="input2" name="input2">
+
+            <label id="label2" for="input2">Moles:</label>
+            <input type="number" id="input2">
+
             <br><br>
             <hr>
+            <br>
+
             <button onclick="calculate()">Calculate</button>
+
             <br><br>
             <hr>
+
             <p id="output"></p>
+            
         </div>
         <div id="mole">
             <img src="mole.png">
@@ -48,3 +67,4 @@
         <script src="script.js"></script>
     </body>
 </html>
+
