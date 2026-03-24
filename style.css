@@ -1,3 +1,8 @@
+@font-face {
+    font-family: lazydog;
+    src: url(lazydog.ttf);
+}
+
 body {
     background-color: #fffbb4;
     justify-content: center;
@@ -9,21 +14,40 @@ body {
 h1 {
     font-family: Barriecito;
     font-size: 4vw;
-    color: black;
+    color: #ff91a1;
 }
 
 h2 {
     font-family: Barriecito;
-    font-size: 2vw;
+    font-size: 3vw;
+    color: #ff91a1;
 }
+
+label {
+    font-family: lazydog;
+    font-size: 1.25vw;
+    color: #ff91a1;
+}
+
 
 #main {
     margin-top: 3vh;
     width: 70vw;
     height: 85vh;
     background-color: white;
-    border-radius: 3vw;
+    border-radius: 5vw;
     padding: 2vw;
+    text-align: center;
+    
+    top: 100%;
+    right: 0;
+
+    background-color: #ffffff;
+    min-width: 150px;
+    border-radius: 10px;
+
+    box-shadow: 3px 3px #ff91a1;
+    padding: 10px 0;
 }
 
 #header {
@@ -36,6 +60,8 @@ h2 {
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: 3vw;
+
+    box-shadow: 3px 3px #ff91a1;
 }
 
 #header h1 {
@@ -83,7 +109,7 @@ h2 {
     background-color: #ffffff;
     min-width: 150px;
     border-radius: 10px;
-    box-shadow: 0px 8px 16px rgba(0,0,0,0.2);
+    box-shadow: 0px 8px 16px #ff91a1;
     padding: 10px 0;
 }
 
@@ -91,11 +117,13 @@ h2 {
     display: block;
     padding: 10px 15px;
     text-decoration: none;
-    color: #333;
+    font-size: 1.5vw;
+    font-family: lazydog;
+    color: #ff91a1;
 }
 
 #sidenav a:hover {
-    background-color: #f1f1f1;
+    background-color: #fffbb4;
 }
 
 .menuWrapper {
@@ -107,13 +135,35 @@ h2 {
 }
 
 button {
-    background-color: #fffbb4;
-    border: solid black;
+    background-color: white;
+    border: solid #ff91a1;
     border-radius: 1vw;
     font-family: Barriecito;
-    font-size: 1.25vw;
+    font-size: 1.75vw;
+    color: #ff91a1;
 }
 
 button:hover {
     cursor: pointer;
+}
+
+.blank {
+    background-color: white;
+    color: white;
+    border-color: white;
+    border-radius: 1vw;
+    font-family: Barriecito;
+    font-size: 1vw;
+}
+
+.mode.active {
+    background-color: #fffbb4;
+}
+
+input::placeholder {
+    color: #aaa;
+}
+
+hr {
+    border-color: #ff91a1;
 }
