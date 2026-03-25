@@ -22,7 +22,7 @@ document.querySelectorAll('.mode').forEach(btn => {
         currentMode = btn.dataset.mode;
         document.getElementById('input1').value = '';
         document.getElementById('input2').value = '';
-        document.getElementById('output').textContent = 'Output here!';
+        document.getElementById('output').textContent = '';
         setPlaceholdersForMode(currentMode);
     });
 });
@@ -93,3 +93,11 @@ function calculate() {
     document.getElementById('output').textContent =
         `Result: ${rounded} ${unit}`;
 }
+
+window.addEventListener("scroll", () => {
+    if (window.scrollY > 50) {
+        header.classList.add("shrink");
+    } else {
+        header.classList.remove("shrink");
+    }
+});
