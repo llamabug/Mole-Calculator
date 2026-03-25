@@ -11,16 +11,19 @@ body {
     flex-direction: column;
 }
 
-h1 {
+a {
     font-family: Barriecito;
     font-size: 4vw;
     color: #ff91a1;
+    text-decoration: none;
+
 }
 
 h2 {
     font-family: Barriecito;
     font-size: 3vw;
     color: #ff91a1;
+    text-decoration: underline #ff91a1;
 }
 
 label {
@@ -31,23 +34,15 @@ label {
 
 
 #main {
-    margin-top: 3vh;
-    width: 70vw;
+    margin-top: 15vh;
+    width: 60vw;
     height: 85vh;
     background-color: white;
     border-radius: 5vw;
     padding: 2vw;
     text-align: center;
-    
-    top: 100%;
-    right: 0;
-
-    background-color: #ffffff;
-    min-width: 150px;
-    border-radius: 10px;
-
-    box-shadow: 3px 3px #ff91a1;
-    padding: 10px 0;
+    box-shadow: 5px 5px #ff91a1;
+    position: relative;
 }
 
 #header {
@@ -60,8 +55,10 @@ label {
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: 3vw;
-
     box-shadow: 3px 3px #ff91a1;
+    position: fixed;
+    top: 1vw;
+    z-index: 30;
 }
 
 #header h1 {
@@ -102,15 +99,14 @@ label {
 #sidenav {
     display: none;
     position: absolute;
-
     top: 100%;
     right: 0;
-
     background-color: #ffffff;
-    min-width: 150px;
+    min-width: 200px;
     border-radius: 10px;
     box-shadow: 0px 8px 16px #ff91a1;
     padding: 10px 0;
+    z-index: 45;
 }
 
 #sidenav a {
@@ -131,7 +127,11 @@ label {
 }
 
 #mole img {
-    width: 10vw;
+    width: 25vw;
+    position: fixed;
+    bottom: 10px; 
+    right: 10px; 
+    z-index: 1000;
 }
 
 button {
@@ -165,5 +165,34 @@ input::placeholder {
 }
 
 hr {
-    border-color: #ff91a1;
+    height: 3px;
+    border-width: 0;
+    color:#fffbb4;
+    background-color:#ff91a1
 }
+
+p {
+    font-family: lazydog;
+    font-size: 1.25vw;
+}
+
+input {
+    font-family: lazydog;
+    font-size: 1vw;
+    padding: 5px;
+    border: 2px solid #ff91a1;
+    border-radius: 15px;
+}
+
+input:focus {
+    outline: none;
+    box-shadow: 0 0 5px #ff91a1;
+}
+
+#footer {
+    position: absolute;
+    bottom: 10px;
+    left: 42%;
+    color: #ff91a1;
+}
+
