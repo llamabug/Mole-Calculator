@@ -25,7 +25,6 @@ h2 {
     font-family: Fascinate;
     font-size: 3vw;
     color: #ff91a1;
-    text-decoration: underline #ff91a1;
 }
 
 label {
@@ -35,16 +34,23 @@ label {
 }
 
 
-#main {
+.main {
     margin-top: 15vh;
     width: 60vw;
-    height: 75vh;
     background-color: white;
     border-radius: 5vw;
     padding: 2vw;
     text-align: center;
     box-shadow: 5px 5px #ff91a1;
     position: relative;
+}
+
+#home {
+    height: 75vh;
+}
+
+#avo {
+    height: 120vh;
 }
 
 #header {
@@ -169,6 +175,7 @@ hr {
 p {
     font-family: Sour Gummy;
     font-size: 1.25vw;
+    color: #85313e;
 }
 
 input {
@@ -210,4 +217,22 @@ input:focus {
 
 #num {
     font-size: 6vw;
+}
+
+.u {
+    text-decoration: underline #ff91a1;
+}
+
+h3 {
+    font-family: Fascinate;
+    font-size: 2vw;
+    color: #ff91a1;
+}
+
+
+
+h4 {
+    font-family: Sour Gummy;
+    font-size: 1.5vw;
+    color: #ff91a1;
 }
