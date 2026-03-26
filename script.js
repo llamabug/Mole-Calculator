@@ -1,6 +1,8 @@
 let currentMode = null;
 const l1 = document.getElementById('label1');
 const l2 = document.getElementById('label2');
+const i1 = document.getElementById('input1');
+const i2 = document.getElementById('input2');
 
 
 function menu(x) {
@@ -30,8 +32,6 @@ document.querySelectorAll('.mode').forEach(btn => {
 
 
 function setPlaceholdersForMode(mode) {
-    const i1 = document.getElementById('input1');
-    const i2 = document.getElementById('input2');
 
     if (mode === 'mass') {
         i1.placeholder = 'Molar mass';
