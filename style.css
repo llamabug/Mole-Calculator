@@ -1,272 +1,135 @@
-body {
-    background-color: #fffbb4;
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-}
-
 h1 {
-    font-family: Fascinate;
-    font-size: 4vw;
-    color: #ff91a1;
-    text-decoration: none;
-}
-
-a {
-    font-family: Fascinate;
-    font-size: 4vw;
-    color: #ff91a1;
-    text-decoration: none;
-
-}
-
-h2 {
-    font-family: Fascinate;
-    font-size: 3vw;
-    color: #ff91a1;
-}
-
-label {
-    font-family: Sour Gummy;
-    font-size: 1.25vw;
-    color: #ff91a1;
+    padding-top: 7%;
+    margin: 0;
+    font-family: Vast Shadow, serif;
+    font-size: 50px;
+    font-weight: 400;
+    font-style: normal;
+    color: rgb(36, 85, 158);
 }
 
 
-.main {
-    margin-top: 15vh;
-    width: 60vw;
-    background-color: white;
-    border-radius: 5vw;
-    padding: 2vw;
+h3 {
+    font-size: 30px;
+    color: rgb(41, 126, 139);
+}
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
     text-align: center;
-    box-shadow: 5px 5px #ff91a1;
-    position: relative;
+    background: #ffffff;
+    background: linear-gradient(0deg, 
+        rgba(255, 255, 255, 1) 0%, 
+        rgba(255, 255, 255, 1) 65%, 
+        rgba(224, 233, 245, 1) 73%, 
+        rgba(84, 132, 199, 1) 92%, 
+        rgba(36, 85, 158, 1) 100%);
 }
 
-#home {
-    height: 75vh;
+.atom {
+    height: 300px;
 }
 
-#avo {
-    height: 120vh;
-}
-
-#table {
-    width: 80vw;
-    height: 90vw;
-}
-
-#stochio {
-    height: 115vh;
-}
-
-#tut {
-    height: 215vh;
-}
-
-#header {
-    width: 90vw;
-    height: 10vh;
-    background-color: white;
-    display: flex;
-    justify-content: space-between; /* Move menuBar to the right */
-    align-items: center;
-    padding-left: 1vw;
-    padding-right: 1vw;
-    border-radius: 3vw;
-    box-shadow: 3px 3px #ff91a1;
-    position: fixed;
-    top: 1vw;
-    z-index: 30;
-}
-
-#header h1 {
-    padding-left: 1.5vw;
-}
-
-.menuBar {
-      display: inline-block;
-      cursor: pointer;
-      position: relative;
-      z-index: 2;
-      padding: 10px;
-}
-
-.bar1, .bar2, .bar3 {
-      width: 35px;
-      height: 5px;
-      transition: 0.4s;
-      background-color: #ff91a1;
-      margin: 6px 0;
-      margin-right: 2vw;
-}
-
-
-.change .bar1 {
-      transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {
-      opacity: 0;
-}
-
-.change .bar3 {
-      transform: translate(0, -11px) rotate(45deg);
-      background-color: #ff91a1;
-}
-
-#sidenav {
-    display: none;
-    position: absolute;
-    top: 100%;
-    right: 0;
-    background-color: #ffffff;
-    min-width: 200px;
-    border-radius: 10px;
-    box-shadow: 0px 8px 16px #ff91a1;
-    padding: 10px 0;
-    z-index: 45;
-}
-
-#sidenav a {
-    display: block;
-    padding: 10px 15px;
-    text-decoration: none;
-    font-size: 1.5vw;
-    font-family: Sour Gummy;
-    color: #ff91a1;
-}
-
-#sidenav a:hover {
-    background-color: #fffbb4;
-}
-
-.menuWrapper {
-    position: relative;
-}
-
-
-button {
-    background-color: white;
-    border: solid #ff91a1;
-    border-radius: 1vw;
-    font-family: Fascinate;
-    font-size: 1.75vw;
-    color: #ff91a1;
-}
-
-button:hover {
-    cursor: pointer;
-}
-
-.blank {
-    background-color: white;
-    color: white;
-    border-color: white;
-    border-radius: 1vw;
-    font-family: Fascinate;
-    font-size: 1vw;
-}
-
-.mode.active {
-    background-color: #fffbb4;
-}
-
-input::placeholder {
-    color: #aaa;
-}
-
-hr {
-    height: 3px;
-    border-width: 0;
-    color:#fffbb4;
-    background-color:#ff91a1
-}
-
-p {
-    font-family: Sour Gummy;
-    font-size: 1.25vw;
-    color: #85313e;
-}
-
-input {
-    font-family: Sour Gummy;
-    font-size: 1vw;
-    padding: 5px;
-    border: 2px solid #ff91a1;
-    border-radius: 15px;
-}
-
-input:focus {
-    outline: none;
-    box-shadow: 0 0 5px #ff91a1;
-}
-
-#footer {
-    position: absolute;
-    bottom: 10px;
-    left: 44%;
-    color: #ff91a1;
-}
-
-
-#moleB {
-    position: absolute;
-    bottom: 10px;
-    right: 25px;
-    width: 15vw;
-    z-index: 45;
-}
-
-#moleT {
+.home {
     position: absolute;
     top: 10px;
     left: 20px;
-    width: 10vw;
+    height: 60px;
     z-index: 45;
+    cursor: pointer;
 }
 
-#num {
-    font-size: 6vw;
+button {
+    color: rgb(36, 85, 158);
+    border-color: rgb(36, 85, 158);
+    border: 1px solid;
+    font-size: 15px;
 }
 
-.u {
-    text-decoration: underline #ff91a1;
+.accordion {
+  background-color: rgb(41, 126, 139);
+  cursor: pointer;
+  padding: 18px;
+  width: 300px;
+  border: 2px solid rgb(36, 85, 158);
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+  margin-left: 10px;
+  margin-right: 10px;
 }
 
-h3 {
-    font-family: Fascinate;
-    font-size: 2vw;
-    color: #ff91a1;
+.active, .accordion:hover {
+  background-color: rgb(241, 126, 139); 
 }
 
-h4 {
-    font-family: Sour Gummy;
-    font-size: 1.5vw;
-    color: #ff91a1;
+.panel {
+  padding: 5px;
+  display: none;
+  overflow: hidden;
 }
 
+.app {
+    background-color: rgba(84, 132, 199, 1);
+    width: 90%;
+    max-width: 600px;
+    margin: 100px auto 0;
+    border-radius: 10px;
+    padding: 30px;
+}
 
-#hider {
+.app h1 {
+    font-size: 25px;
+    color: #001e4d;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+    padding-bottom: 30px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.quiz {
+    padding: 20px 0;
+}
+
+.quiz h2{
+    font-size: 18px;
+    color: #001e4d;
+    font-weight: 600;
+}
+
+.btn {
+    background: #fff;
+    color: #222;
+    font-weight: 500;
     width: 100%;
-    height: 10vh;
-    top: 0;
-    background-color: #fffbb4;
-    z-index: 20;
-    position: fixed;
-    display: flex;
+    border: 1px solid #222;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+    border-radius: 4px;
+    cursor: pointer;
 }
 
-.column {
-  display: flex;
+.btn:hover {
+    background: #222;
+    color: #fff;
 }
 
-.left {
-  width: 33%;
-}
-
-.right {
-  width: 66%;
+#next-btn {
+    background: #001e4d;
+    color: #fff;
+    font-weight: 500;
+    width: 150px;
+    border: 0;
+    padding: 10px;
+    margin: 20px auto 0;
+    border-radius: 4px;
+    cursor: pointer;
 }
